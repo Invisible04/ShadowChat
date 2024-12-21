@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <title>Message</title>
+
+    <!-- Import -->
+
+    <!-- Library -->
+    <script src="https://cdn.socket.io/4.8.1/socket.io.js"></script>
+
+    <!-- Script -->
+        <!-- Connection -->
+         <script src="Script/Page/Connection/socket.js"></script>
+        <!-- Chat -->
+        <script src="Script/Page/Chat/bubbleChat.js" defer></script>
+        <script src="Script/Page/Chat/userBar.js" defer></script>
+        <script src="Script/Page/Chat/chatList.js" defer></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="Interface/Theme/original.css">
+</head>
+<body>
+    <div class="screen-main" system-version="1.0.0">
+        <div class="home-body sm-body">
+            <div class="left-side-box">
+                <div class="header-box">
+                    <div class="top-box">
+                        <div class="menu-btn-box">
+                            <img src="Interface/Icon/SVG/Original/fi-br-menu-burger.svg">
+                        </div>
+                        <div class="searchbar-box">
+                            <div class="searchbar">
+                                <img src="Interface/Icon/SVG/Original/fi-br-search.svg">
+                                <input class="input-box" type="text" placeholder="Search">
+                            </div>
+                        </div>
+                        <div class="status-btn-box"></div>
+                    </div>
+                    <div class="hidden-box"></div>
+                    <div class="bottom-box">
+                        <div class="category-tab-bar-list-box">
+                            <div class="category-tab-bar-list">
+                                <div class="General-box category-itmes-box">
+                                    <div class="info-box">
+                                        <div class="info-name-box">
+                                            <p>General</p>
+                                        </div>
+                                        <div class="num-msg-box">
+                                            <p>99</p>
+                                        </div>
+                                    </div>
+                                    <div class="decoration-box">
+                                        <div class="decoration"></div>
+                                    </div>
+                                </div>
+                                <div class="category-itmes-box" hidden></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-list-box"></div>
+                <div class="chat-additional-action-box">
+                    <div class="floating-action-btn">
+                        <img src="Interface/Icon/SVG/Original/fi-br-pencil.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="right-side-box">
+                <dir class="chatbox rsb-chatbox" hidden>
+                    <div class="header-box">
+                        <div class="profile-icon-box">
+                            <img src="Interface/Icon/PNG/Flat_Color/016-user.png">
+                        </div>
+                        <div class="profile-info-box">
+                            <p class="name">Anonymous</p>
+                            <p class="status">Online</p>
+                        </div>
+                        <div class="profile-action-box">
+                            <div class="call-btn-box">
+                                <img src="Interface/Icon/SVG/Original/fi-br-phone-call.svg">
+                            </div>
+                            <div class="search-btn-box">
+                                <img src="Interface/Icon/SVG/Original/fi-br-search.svg">
+                            </div>
+                            <div class="options-btn-box">
+                                <img src="Interface/Icon/SVG/Original/fi-br-menu-dots-vertical.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-msg-box">
+                        <div class="chat-scroll-box">
+                            <div class="chat-bubble-list"></div>
+                        </div>
+                    </div>
+                    <div class="chat-panel-box">
+                        <div class="emoji-toolbox">
+                            <div class="close-btn-box toolbox-icons">
+                                <img src="Interface/Icon/SVG/Original/fi-br-cross.svg">
+                            </div>
+                            <div class="emoji-btn-box toolbox-icons default">
+                                <img src="Interface/Icon/SVG/Original/fi-br-smile-beam.svg">
+                            </div>
+                            <div class="sticker-btn-box toolbox-icons">
+                                <img src="Interface/Icon/SVG/Original/fi-br-sticker.svg">
+                            </div>
+                            <div class="gif-btn-box toolbox-icons">
+                                <img src="Interface/Icon/SVG/Original/fi-br-gif.svg">
+                            </div>
+                        </div>
+                        <div class="add-media-box">
+                            <img src="Interface/Icon/SVG/Original/fi-br-plus.svg">
+                        </div>
+                        <div class="chat-bar-box">
+                            <input class="sm-hb-rsb-input" type="text" placeholder="Type a message">
+                        </div>
+                        <div class="sm-hb-rsb-input-btn action-btn-box">
+                            <img src="Interface/Icon/SVG/Original/fi-br-paper-plane-top.svg">
+                        </div>
+                    </div>
+                </dir>
+            </div>
+        </div>
+        <div class="profile-body sm-body"></div>
+        <div class="settings-body sm-body"></div>
+    </div>
+    
+    <script>
+        //let socket = io();
+
+        /*function request(WHAT){
+            if(WHAT == "socket id"){
+                console.log(socket.id);
+            }else if(WHAT == "socket"){
+                console.log(socket);
+            }else if(WHAT == ""){
+                
+            }
+        }*/
+    </script>
+</body>
+</html>
